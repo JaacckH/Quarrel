@@ -7,12 +7,16 @@
 
   <ItemGroup>
     <Compile Remove="Migrations\**" />
+    <Compile Remove="wwwroot\ProductImages\**" />
     <Compile Remove="wwwroot\ProfileImages\**" />
     <Content Remove="Migrations\**" />
+    <Content Remove="wwwroot\ProductImages\**" />
     <Content Remove="wwwroot\ProfileImages\**" />
     <EmbeddedResource Remove="Migrations\**" />
+    <EmbeddedResource Remove="wwwroot\ProductImages\**" />
     <EmbeddedResource Remove="wwwroot\ProfileImages\**" />
     <None Remove="Migrations\**" />
+    <None Remove="wwwroot\ProductImages\**" />
     <None Remove="wwwroot\ProfileImages\**" />
   </ItemGroup>
 
@@ -51,10 +55,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\ProductImages\" />
   </ItemGroup>
 
 </Project>

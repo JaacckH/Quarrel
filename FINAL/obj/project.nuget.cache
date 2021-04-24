@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ElaLDZIVUqgw2XTc0mCxMxy6s7SAbxNM51uybKg5bkFUzOwaVEv/COWaZ4E0HcnZK/htGbOFSb2vyX79yUlUGw==",
+  "dgSpecHash": "UBlGxLa8HbjaOSWu1bpA33by3FQZ4bc0OtogCdNstuvQGZ5g4UhiB5OTrN8p9YFWTxsE9ApGwLk+AMl4j6Kwow==",
   "success": true,
-  "projectFilePath": "Z:\\Quarrel\\Project Files\\FINAL\\FINAL.csproj",
+  "projectFilePath": "C:\\Users\\jackh\\source\\repos\\Quarrel\\FINAL\\FINAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jackh\\.nuget\\packages\\microsoft.aspnet.signalr\\2.4.1\\microsoft.aspnet.signalr.2.4.1.nupkg.sha512",
     "C:\\Users\\jackh\\.nuget\\packages\\microsoft.aspnet.signalr.core\\2.4.1\\microsoft.aspnet.signalr.core.2.4.1.nupkg.sha512",

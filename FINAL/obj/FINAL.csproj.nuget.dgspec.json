@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\Quarrel\\Project Files\\FINAL\\FINAL.csproj": {}
+    "C:\\Users\\jackh\\source\\repos\\Quarrel\\FINAL\\FINAL.csproj": {}
   },
   "projects": {
-    "Z:\\Quarrel\\Project Files\\FINAL\\FINAL.csproj": {
+    "C:\\Users\\jackh\\source\\repos\\Quarrel\\FINAL\\FINAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\Quarrel\\Project Files\\FINAL\\FINAL.csproj",
+        "projectUniqueName": "C:\\Users\\jackh\\source\\repos\\Quarrel\\FINAL\\FINAL.csproj",
         "projectName": "SoftwareProject",
-        "projectPath": "Z:\\Quarrel\\Project Files\\FINAL\\FINAL.csproj",
+        "projectPath": "C:\\Users\\jackh\\source\\repos\\Quarrel\\FINAL\\FINAL.csproj",
         "packagesPath": "C:\\Users\\jackh\\.nuget\\packages\\",
-        "outputPath": "Z:\\Quarrel\\Project Files\\FINAL\\obj\\",
+        "outputPath": "C:\\Users\\jackh\\source\\repos\\Quarrel\\FINAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jackh\\AppData\\Roaming\\NuGet\\NuGet.Config",

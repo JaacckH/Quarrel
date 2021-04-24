@@ -1,331 +1,79 @@
 ﻿@page
 @model Group_Project.Models.IndexModel
-@{
-    if (HttpContext.Request.Cookies["rtc"] == "True")
+
+<div class="container" style="max-width:92%;">
+    <h1 style="font-size: 50pt; margin:60px 0px;">Hello Georgia,</h1>
+    <div class="index-profile">
+        <div class="row">
+            <div class="col-5" style="margin-top:100px;">
+                <center>
+                    <img src="~/Images/selfie.png" style="width:150px; height:150px;
+                    border-radius:50%;" />
+                </center>
+            </div>
+            <div class="col-7" style="margin-top:100px;">
+                <h1 style="font-size:40pt;">Georgia Hall</h1>
+                <p>Studying Accounting at Sheffield Hallam</p>
+            </div>
+        </div>
+        <div class="row" style="margin-top:50px;">
+            <div class="col">
+            </div>
+            <div class="col">
+            </div>
+            <div class="col">
+                <p>#Sheffield</p>
+            </div>
+            <div class="col">
+                <p>#Sister</p>
+            </div>
+            <div class="col">
+                <p>#Student</p>
+            </div>
+            <div class="col">
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+
+    <h1 style="margin-top:90px;  margin-bottom:40px;">People you may know</h1>
+    <div class="row" style="margin:20px 0px;">
+
+        @for (int i = 0; i < 5; i++)
+        {
+            String path = "/Images/selfie" + i + ".png";
+            <div class="col">
+                <center>
+                    <img src="@path" class="glow-unseen" style="width:120px; height:120px;
+                    border-radius:50%;" />
+                </center>
+            </div>
+        }
+    </div>
+
+    <h1 style="margin-top:90px; margin-bottom:40px;">Messages</h1>
+
+    @for (int i = 0; i < 5; i++)
     {
-        Response.Redirect("/Checkout");
+        String path = "/Images/selfie" + i + ".png";
+        <div class="index-messagepanel">
+            <div class="row">
+                <div class="col-4" style="margin-top:65px;">
+                    <center>
+                        <img src="@path" class="glow-unseen" style="width:120px; height:120px;
+                            border-radius:50%;" />
+                    </center>
+                </div>
+                <div class="col-7" style="margin-top:45px;">
+                    <p>
+                        wad awd efs f gfdthg gdsgf sef s gdg dfgsd sef rgdfhfgh fgz sdfsdggdfg zdg dsfgd
+                        dz fgd fgzdfg sef dfgdr gzdr
+                    </p>
+                </div>
+            </div>
+        </div>
     }
 
-    String HomeHeader = Classes.Settings.getSetting("HomeHeader");
-    String HomeHeaderText = Classes.Settings.getSetting("HomeHeaderText");
-}
 
-<div class="main-index-page page-name">
-    <div class="row page-1">
-        <div id="main-header-panel" class="order-2 order-xl-1 col-12 col-md-9 col-xl-6 verticle-align-left">
-            <div class="row">
-                <div class="col-12 col-xl-8 main-header">
-                    <h1 class="title" style="white-space: pre-line">@HomeHeader</h1>
-                    <p class="">@HomeHeaderText</p>
-
-                </div>
-                <div class="row col-12 social-header">
-                    <div class="col-4 col-xl-3">
-                        <a href="https://www.facebook.com/OuiOuiFashionMauritius" target="_blank">
-                            <img class="social-icons" src="https://raw.githubusercontent.com/nateainsworth/Group-24/master/Group-24/wwwroot/images/Facebook.png" />
-                        </a>
-                    </div>
-                    <div class="col-4 col-xl-3">
-                        <a href="https://www.instagram.com/ouiouifashionmauritius/" target="_blank">
-                            <img class="social-icons" src="https://raw.githubusercontent.com/nateainsworth/Group-24/master/Group-24/wwwroot/images/Layer%2017.png" />
-                        </a>
-                    </div>
-                    <div class="col-4 col-xl-3">
-                        <a href="mailto: ouiouifashionmu@gmail.com" target="_blank">
-                            <img class="social-icons" src="https://raw.githubusercontent.com/nateainsworth/Group-24/master/Group-24/wwwroot/images/Email.png" />
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-        <div class="col-12 col-xl-6 order-1 order-xl-2" style="overflow: hidden;">
-            <img src="https://raw.githubusercontent.com/nateainsworth/Group-24/master/Group-24/wwwroot/images/Header-Img.png" alt="" class="d-none d-xl-block header-img">
-            <img src="https://github.com/nateainsworth/Group-24/blob/master/Group-24/wwwroot/images/header-mobile.png?raw=true" class="d-block d-xl-none header-img mobile-header-img" alt="">
-
-        </div>
-    </div>
-    <div class="page-2">
-
-        <div class="container page-2-container">
-            <div class="row row-cols-1 row-cols-md-3">
-                <div class="col-12 col-md-4 mb-3">
-                    <div class="card shadow" onclick="window.location.href = '/Shop?category=footwear'">
-                        <img src="https://images.asos-media.com/products/simmi-london-heidi-block-heeled-sandals-in-black/22188896-1-black?$n_640w$&wid=634&fit=constrain" class="card-img-top" alt="footwear">
-                        <div class="card-body">
-                            <h2 class="card-title">FOOTWEAR</h2>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-3">
-                    <div class="card shadow" onclick="window.location.href = '/Shop?category=womens'">
-                        <img src="https://github.com/nateainsworth/Group-24/blob/master/Group-24/wwwroot/images/dress-category.png?raw=true" class="card-img-top" alt="Clothing">
-                        <div class="card-body">
-                            <h2 class="card-title">CLOTHING</h2>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-3">
-                    <div class="card shadow" onclick="window.location.href = '/Shop?category=accessories'">
-                        <img src="https://images.asos-media.com/products/aldo-jessielea-snake-hoop-earrings-in-gold-and-green/22558155-1-go1?$n_640w$&wid=634&fit=constrain" class="card-img-top" alt="ACCESSORIES">
-                        <div class="card-body">
-                            <h2 class="card-title">ACCESSORIES</h2>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 main-buttons">
-                <button class="btn btn-ouioui" onclick="window.location.href = '/Shop';">SHOP NOW</button>
-            </div>
-        </div>
-    </div>
-    <div class="page-3">
-        <h1 class="section-header" >FEATURED</h1>
-        <div class="container">
-            <!-- Working Version Start-->
-            <div id="product-rows" class="row product-rows productShowcase">
-
-
-                <div class="row" id="other-products">
-                    <div class="col-12 ">
-                        <div class="row">
-                            @Html.Raw(Classes.ProductFunctions.getFeaturedProductsHTML())
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <!-- working version END
-
-            <div class="row " >
-                <div class="col-12 col-md-6 col-xl-3" id="product-container">
-                    <img src="https://i.pinimg.com/564x/05/53/ca/0553cadabd0b7d23fb8b7d07d02b0680.jpg" alt="" id="shop-picture">
-                    <p>Long Sleeve Dress <br /> ₹ 800</p>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3" id="product-container">
-                    <img src="https://images.asos-media.com/products/asos-edition-broderie-milkmaid-dress/11987063-1-mustard?$XXL$&wid=513&fit=constrain" alt="" id="shop-picture">
-                    <p>Long Sleeve Dress <br /> ₹ 800</p>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3" id="product-container">
-                    <img src="https://images.asos-media.com/products/asos-edition-garden-floral-embroidered-maxi-dress/12622906-1-multi?$XXL$&wid=513&fit=constrain" alt="" id="shop-picture">
-                    <p>Long Sleeve Dress <br /> ₹ 800</p>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3" id="product-container">
-                    <img src="https://images.asos-media.com/products/asos-design-long-sleeve-waterfall-deep-plunge-midi-dress/9248520-1-orange?$XXL$&wid=513&fit=constrain" alt="" id="shop-picture">
-                    <p>Long Sleeve Dress <br /> ₹ 800</p>
-                </div>
-
-
-                <div class="col-12 col-md-6 col-xl-3" id="product-container">
-                    <img src="https://images.asos-media.com/products/asos-edition-ciara-sequin-kimono-sleeve-wedding-dress/11023434-2?$XXL$&wid=513&fit=constrain" alt="" id="shop-picture">
-                    <p>Long Sleeve Dress <br /> ₹ 800</p>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3" id="product-container">
-                    <img src="https://images.asos-media.com/products/asos-design-long-sleeve-midi-dress-with-obi-belt-in-green/14448334-1-antiquegreen?$n_480w$&wid=476&fit=constrain" alt="" id="shop-picture">
-                    <p>Long Sleeve Dress <br /> ₹ 800</p>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3" id="product-container">
-                    <img src="https://images.asos-media.com/products/asos-design-pleated-cami-midi-dress-with-drawstring-waist-in-forest-green/14093179-1-forestgreen?$n_480w$&wid=476&fit=constrain" alt="" id="shop-picture">
-                    <p>Long Sleeve Dress <br /> ₹ 800</p>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3" id="product-container">
-                    <img src="https://cdn.mos.cms.futurecdn.net/ZFUJ2BzruvzKFrUJyEvHDY.jpg" alt="" id="shop-picture">
-                    <p>Long Sleeve Dress <br /> ₹ 800</p>
-                </div>
-
-
-                <div class="col-12 col-md-6 col-xl-3" id="product-container">
-                    <img src="https://i.pinimg.com/564x/05/53/ca/0553cadabd0b7d23fb8b7d07d02b0680.jpg" alt="" id="shop-picture">
-                    <p>Long Sleeve Dress <br /> ₹ 800</p>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3" id="product-container">
-                    <img src="https://images.asos-media.com/products/asos-edition-broderie-milkmaid-dress/11987063-1-mustard?$XXL$&wid=513&fit=constrain" alt="" id="shop-picture">
-                    <p>Long Sleeve Dress <br /> ₹ 800</p>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3" id="product-container">
-                    <img src="https://images.asos-media.com/products/asos-edition-garden-floral-embroidered-maxi-dress/12622906-1-multi?$XXL$&wid=513&fit=constrain" alt="" id="shop-picture">
-                    <p>Long Sleeve Dress <br /> ₹ 800</p>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3" id="product-container">
-                    <img src="https://images.asos-media.com/products/asos-design-long-sleeve-waterfall-deep-plunge-midi-dress/9248520-1-orange?$XXL$&wid=513&fit=constrain" alt="" id="shop-picture">
-                    <p>Long Sleeve Dress <br /> ₹ 800</p>
-                </div>
-
-            </div>
-               -->
-
-
-        </div>
-    </div>
-    <div class="page-4">
-        <div class="container page-4-container">
-            <h1 class="section-header">REVIEWS</h1>
-
-            <div id="carousel" class="carousel slide" data-ride="carousel">
-                <div class="container">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-
-                            <div class="container">
-                                <div class="card text-center">
-
-                                    <div class="card-body review-body">
-
-                                        <div class="card-body-txt">
-                                            <h5 class="card-title"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></h5>
-                                            <p class="card-text">Very nice and fast support, sometimes they seem a little confused or overwhelmed but in the end I always get the help I need.</p>
-                                            <p class="card-author">Ernie Smith</p>
-                                        </div>
-                                    </div>
-                                    <div class="card-footer text-muted">
-                                        2 days ago
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="carousel-item">
-
-                            <div class="container">
-                                <div class="card text-center">
-
-                                    <div class="card-body review-body">
-
-                                        <div class="card-body-txt">
-                                            <h5 class="card-title"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></h5>
-                                            <p class="card-text">
-                                                I have followed guidelines to create a barcode for each returned order, but returned multiple in one package using one barcode.
-                                                I have had to chase the refund onto my account and provide additional evidence of my actions.
-                                                Kenneth the CS Operator was very helpful, and has assured me that refunds for all items returned are now pending on my account..
-                                            </p>
-                                            <p class="card-author">Mollie Cook</p>
-                                        </div>
-
-                                    </div>
-                                    <div class="card-footer text-muted">
-                                        2 days ago
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <a class="carousel-control-prev d-none d-sm-flex" href="#carousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next d-none d-sm-flex" href="#carousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="page-5">
-        <div class="container page-5-container">
-            <h1 class="section-header">GALLERY</h1>
-            <div class="card-deck">
-                <div class="card shadow" style="border: none;">
-                    <img src="https://i.pinimg.com/564x/05/53/ca/0553cadabd0b7d23fb8b7d07d02b0680.jpg" alt="" id="shop-picture" class="card-img-top" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card-img-header">
-                            <h5 class="card-title insta-card-title"><span><i class="fas fa-heart"></i> 10</span><span><i class="fas fa-comment"></i> 4</span></h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="card shadow" style="border: none;">
-                    <img src="https://images.asos-media.com/products/pieces-smock-dress-with-shirred-cuff-in-light-green/23153926-1-lightgreen?$XXL$&wid=513&fit=constrain" alt="" id="shop-picture" class="card-img-top" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card-img-header">
-                            <h5 class="card-title insta-card-title"><span><i class="fas fa-heart"></i> 10</span><span><i class="fas fa-comment"></i> 4</span></h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="card shadow" style="border: none;">
-                    <img src="https://images.asos-media.com/products/pieces-mini-smock-dress-with-volume-sheer-sleeve-in-ditsy-floral/22481019-1-blackditsyfloral?$XXL$&amp;wid=513&amp;fit=constrain" alt="" id="shop-picture" class="card-img-top" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card-img-header">
-                            <h5 class="card-title insta-card-title"><span><i class="fas fa-heart"></i> 10</span><span><i class="fas fa-comment"></i> 4</span></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-deck">
-                <div class="card shadow" style="border: none;">
-                    <img src="https://content.asos-media.com/-/media/homepages/ww/2021/04/12/ww_uk_miss_selfridge_moment_870x1110.jpg" alt="" id="shop-picture" class="card-img-top" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card-img-header">
-                            <h5 class="card-title insta-card-title"><span><i class="fas fa-heart"></i> 13</span><span><i class="fas fa-comment"></i> 11</span></h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="card shadow" style="border: none;">
-                    <img src="https://content.asos-media.com/-/media/homepages/ww/2021/04/12/ww_uk_curve_moment_870x1110-1.jpg" alt="" id="shop-picture" class="card-img-top" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card-img-header">
-                            <h5 class="card-title insta-card-title"><span><i class="fas fa-heart"></i> 6</span><span><i class="fas fa-comment"></i> 3</span></h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="card shadow" style="border: none;">
-                    <img src="https://images.asos-media.com/products/topshop-shirt-dress-in-animal-print/22196455-1-multi?$n_320w$&wid=317&fit=constrain" alt="" id="shop-picture" class="card-img-top" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card-img-header">
-                            <h5 class="card-title insta-card-title"><span><i class="fas fa-heart"></i> 1</span><span><i class="fas fa-comment"></i> 7</span></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="page-6">
-        <div class="container page-6-container">
-
-        </div>
-    </div>
-    <div class="page-footer">
-        <div class="row page-footer-container">
-            <div class="col-12 col-md-6 col-xl-3 order-4 order-xl-1">
-                <p>
-                    <a>Terms & Conditions</a><br />
-                    <a>Returns Policy</a><br />
-                    <a>Privacy Policy</a><br />
-                    <a>Delivery Information</a>
-                </p>
-
-                <p>Phone: +230 5988 0400</p>
-            </div>
-            <div class="col-12 col-md-6 col-xl-3 order-3 order-xl-2">
-                <p>
-                    Address:<br />
-                    Harbour Front Building,<br />
-                    President John Kennedy St,<br />
-                    Port Louis,<br />
-                    Mauritius
-                </p>
-            </div>
-            <div class="col-12 col-md-6=12 col-xl-3 row order-2 order-xl-3">
-                <div class="col-12"><p>Opening Hours:</p></div>
-                <div class="col-6"><p>Mon - Fri<br />Saturday<br />Sunday</p></div>
-                <div class="col-6 px-4"><p>10am - 5pm<br />10am - 5pm<br />10am - 1pm</p></div>
-            </div>
-            <div class="col-12 col-md-8 px-4 col-xl-3 row subscribe-row order-1 order-xl-4">
-                <h3>BE UP TO DATE WITH OUR NEWS!</h3>
-                <form class="form-group">
-                    <input type="email" class="form-control mb-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="EMAIL">
-                    <button class="btn btn-ouioui-secondary">SUBSCRIBE</button>
-                </form>
-            </div>
-        </div>
-    </div>
 </div>
-<!-- end of main -->
