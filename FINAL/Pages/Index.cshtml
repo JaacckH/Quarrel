@@ -3,7 +3,7 @@
 
 <div class="container" style="max-width:92%;">
     <h1 style="font-size: 50pt; margin:60px 0px;">Hello Georgia,</h1>
-    <div class="index-profile">
+    <div class="index-profile animate">
         <div class="row">
             <div class="col-5" style="margin-top:100px;">
                 <center>
@@ -12,7 +12,7 @@
                 </center>
             </div>
             <div class="col-7" style="margin-top:100px;">
-                <h1 style="font-size:40pt;">Georgia Hall</h1>
+                <h1 style="font-size:40pt; color:var(--background);">Georgia Hall</h1>
                 <p>Studying Accounting at Sheffield Hallam</p>
             </div>
         </div>
@@ -57,19 +57,24 @@
     @for (int i = 0; i < 5; i++)
     {
         String path = "/Images/selfie" + i + ".png";
-        <div class="index-messagepanel" onclick="window.location.href = '/message';">
+        <div class="index-messagepanel animate" onclick="window.location.href = '/message';">
             <div class="row">
-                <div class="col-4" style="margin-top:65px;">
+                <div class="col-3" style="margin-top:35px;">
                     <center>
                         <img src="@path" class="glow-unseen" style="width:120px; height:120px;
                             border-radius:50%;" />
                     </center>
                 </div>
                 <div class="col-7" style="margin-top:45px;">
+                    <h1>Fredrick</h1>
                     <p>
-                        wad awd efs f gfdthg gdsgf sef s gdg dfgsd sef rgdfhfgh fgz sdfsdggdfg zdg dsfgd
-                        dz fgd fgzdfg sef dfgdr gzdr
+                        <b> XXXX: Hello, you there? </b>
                     </p>
+                </div>
+                <div class="col-2" style="margin-top:35px;">
+                    <center>
+                        <i class="fas fa-sliders-h"></i>
+                    </center>
                 </div>
             </div>
         </div>

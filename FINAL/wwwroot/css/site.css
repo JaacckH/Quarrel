@@ -1,24 +1,23 @@
 ﻿body {
     background-color: var(--background);
-    background-image: url("/Images/mainback.png");
     background-repeat: no-repeat;
-    overflow: hidden;
 }
 
 :root {
-    --background: #11102c;
-    --foreground: #1d1d41;
-    --accent: #00ffde;
+    --background: #fff;
+    --foreground: #efefef;
+    --accent: #fa3b56;
+    --text: #1b1b1b;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Work Sans', sans-serif;
-    color: white;
+    color: var(--accent);
 }
 
 p {
     font-family: 'Roboto Mono', monospace;
-    color: white;
+    color: var(--text);
     font-size: 20pt;
 }
 
@@ -29,11 +28,54 @@ p {
     border-radius: 30px;
 }
 
+    .index-profile p {
+        color: var(--foreground);
+    }
+
+.animate {
+    background: linear-gradient(-45deg, var(--accent), #ff4862, var(--accent), #ff4862);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .index-messagepanel {
-    background-color: var(--foreground);
-    height: 250px;
-    border-radius: 30px;
-    margin: 40px 0px;
+    background-color: var(--background);
+    height: 190px;
+    border-radius: 50px;
+    margin: 30px 0px;
+}
+
+    .index-messagepanel h1 {
+        color:var(--background);
+    }
+
+    .index-messagepanel p {
+        color: var(--foreground);
+    }
+
+    .index-messagepanel i {
+        color: var(--background);
+        font-size:35pt;
+        margin-top:35px;
+    }
+
+.index-messagepanel-divider{
+    background-color:var(--accent);
+    width:90%;
 }
 
 h1 {
@@ -45,7 +87,7 @@ img {
 }
 
 .glow-unseen {
-    box-shadow: rgb(128, 199, 255) 0px 0px 15px 5px, rgb(228, 136, 255) 0px 0px 0px 7px, rgb(142, 92, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    box-shadow: var(--accent) 0px 0px 15px 5px, var(--accent) 0px 0px 0px 7px, var(--accent) 0px 0px 0px 0px, var(--accent) 0px 0px 0px 0px;
 }
 
 .top-navbar {
@@ -114,15 +156,15 @@ img {
 }
 
     .message-received p {
-        color: white;
+        color: var(--accent);
         padding: 25px;
     }
 
 .messagebar {
-    height:120px;
+    height: 120px;
     width: calc(100% + 16px);
     position: absolute;
-    bottom:-55px;
+    bottom: -65px;
     left: 0px;
 }
 
@@ -136,21 +178,21 @@ img {
     margin-right: 20px;
     padding: 0px 30px;
     font-size: 26pt;
-    color: white;
+    color: var(--accent);
     font-family: 'Roboto Mono', monospace;
 }
 
-.panel-gifs{
-    height:90px;
-    width:90px;
-    border-radius:50%;
-    margin-left:20px;
+.panel-gifs {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-left: 20px;
     background-color: var(--foreground);
 }
 
-.panel-gif{
-    margin-top:18px;
-    margin-left:24px;
+.panel-gif {
+    margin-top: 18px;
+    margin-left: 24px;
 }
 
 .panel-image {
