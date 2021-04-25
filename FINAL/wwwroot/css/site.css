@@ -6,7 +6,8 @@
 :root {
     --background: #fff;
     --foreground: #efefef;
-    --accent: #fa3b56;
+    --accent: #02c76c;
+    --accent-2: #00ff72;
     --text: #1b1b1b;
 }
 
@@ -33,7 +34,7 @@ p {
     }
 
 .animate {
-    background: linear-gradient(-45deg, var(--accent), #ff4862, var(--accent), #ff4862);
+    background: linear-gradient(-45deg, var(--accent), var(--accent), var(--accent), var(--accent));
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
@@ -60,7 +61,7 @@ p {
 }
 
     .index-messagepanel h1 {
-        color:var(--background);
+        color: var(--background);
     }
 
     .index-messagepanel p {
@@ -69,13 +70,13 @@ p {
 
     .index-messagepanel i {
         color: var(--background);
-        font-size:35pt;
-        margin-top:35px;
+        font-size: 35pt;
+        margin-top: 35px;
     }
 
-.index-messagepanel-divider{
-    background-color:var(--accent);
-    width:90%;
+.index-messagepanel-divider {
+    background-color: var(--accent);
+    width: 90%;
 }
 
 h1 {
@@ -87,7 +88,7 @@ img {
 }
 
 .glow-unseen {
-    box-shadow: var(--accent) 0px 0px 15px 5px, var(--accent) 0px 0px 0px 7px, var(--accent) 0px 0px 0px 0px, var(--accent) 0px 0px 0px 0px;
+    box-shadow: var(--accent-2) 0px 0px 15px 5px, var(--accent-2) 0px 0px 0px 7px, var(--accent-2) 0px 0px 0px 0px, var(--accent-2) 0px 0px 0px 0px;
 }
 
 .top-navbar {
@@ -199,4 +200,81 @@ img {
     height: 90px;
     width: 90px;
     background-color: var(--foreground);
+}
+
+.settings-top {
+    background-color: var(--accent);
+    height: 650px;
+    width: 105%;
+    overflow: hidden;
+}
+
+    .settings-top h1 {
+        font-size: 35pt;
+        margin-bottom: 0px;
+        color: var(--background);
+        margin-top: 5px;
+    }
+
+    .settings-top p {
+        font-size: 22pt;
+        margin-bottom: 0px;
+        color: var(--background);
+    }
+
+.button-editprofile {
+    border: none;
+    background-color: var(--background);
+    padding: 20px 60px;
+    font-size: 25pt;
+    float: right;
+    font-family: 'Work Sans', sans-serif;
+    border-radius: 80px;
+    color: var(--accent);
+    margin-top: 15px;
+}
+
+.settings-cog {
+    color: var(--background);
+    font-size: 48pt;
+    margin-top: 8px;
+    float: right;
+}
+
+.settings-stats p {
+    margin-top: 10px;
+    font-size: 17pt;
+    text-align: center;
+}
+
+.settings-stats h1 {
+    font-size: 45pt;
+    text-align: center;
+}
+
+.settings-statbox {
+    background-color: var(--background);
+    width: 95%;
+    margin-top: 30px;
+    position: absolute;
+    z-index: 100;
+    top: 520px;
+    left: 5%;
+    padding: 40px 0px;
+    border-radius: 50px;
+}
+
+    .settings-statbox h1 {
+        font-size: 50pt;
+        text-align: center;
+        color: var(--accent);
+    }
+
+    .settings-statbox p {
+        text-align: center;
+        color: #ccc;
+    }
+
+.settings-divider {
+    font-size: 62pt;
 }
