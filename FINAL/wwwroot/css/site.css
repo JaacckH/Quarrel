@@ -2,12 +2,13 @@
     background-color: var(--background);
     background-image: url("/Images/mainback.png");
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 :root {
     --background: #11102c;
     --foreground: #1d1d41;
-    --accent: #ff0030;
+    --accent: #00ffde;
 }
 
 h1, h2, h3, h4, h5 {
@@ -45,4 +46,115 @@ img {
 
 .glow-unseen {
     box-shadow: rgb(128, 199, 255) 0px 0px 15px 5px, rgb(228, 136, 255) 0px 0px 0px 7px, rgb(142, 92, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+.top-navbar {
+    width: 102%;
+    height: 100px;
+    background-color: var(--background);
+}
+
+.icon-back {
+    color: var(--foreground);
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.icon-settings {
+    color: var(--foreground);
+    padding-top: 26px;
+    padding-left: 10px;
+}
+
+.top-navbar h1 {
+    font-size: 35pt;
+    padding-top: 20px;
+}
+
+.divider {
+    background-color: var(--foreground);
+    width: 102%;
+    height: 5px;
+}
+
+#messages {
+    padding-top: 50px;
+}
+
+.message-time {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.message-time-sent {
+    margin-right: 30px;
+    float: right;
+}
+
+
+.message-sent {
+    background-color: var(--accent);
+    width: 100%;
+    min-height: 30px;
+    border-radius: 40px 40px 0px 40px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+    .message-sent p {
+        color: var(--background);
+        padding: 25px;
+    }
+
+.message-received {
+    background-color: var(--foreground);
+    min-height: 30px;
+    border-radius: 40px 40px 40px 0px;
+    margin-bottom: 30px;
+}
+
+    .message-received p {
+        color: white;
+        padding: 25px;
+    }
+
+.messagebar {
+    height:120px;
+    width: calc(100% + 16px);
+    position: absolute;
+    bottom:-55px;
+    left: 0px;
+}
+
+.panel-input {
+    background-color: var(--foreground);
+    border: none;
+    border-radius: 55px;
+    width: 93%;
+    height: 90px;
+    float: right;
+    margin-right: 20px;
+    padding: 0px 30px;
+    font-size: 26pt;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.panel-gifs{
+    height:90px;
+    width:90px;
+    border-radius:50%;
+    margin-left:20px;
+    background-color: var(--foreground);
+}
+
+.panel-gif{
+    margin-top:18px;
+    margin-left:24px;
+}
+
+.panel-image {
+    height: 90px;
+    width: 90px;
+    background-color: var(--foreground);
 }

@@ -379,3 +379,4 @@ C:\Users\jackh\Source\Repos\Quarrel\FINAL\bin\Debug\netcoreapp3.1\runtimes\win\l
 C:\Users\jackh\Source\Repos\Quarrel\FINAL\obj\Debug\netcoreapp3.1\SoftwareProject.Views.pdb
 C:\Users\jackh\Source\Repos\Quarrel\FINAL\obj\Debug\netcoreapp3.1\FINAL.csproj.CopyComplete
 C:\Users\jackh\Source\Repos\Quarrel\FINAL\obj\Debug\netcoreapp3.1\FINAL.genruntimeconfig.cache
+C:\Users\jackh\source\repos\Quarrel\FINAL\obj\Debug\netcoreapp3.1\Razor\Pages\Message.cshtml.g.cs
