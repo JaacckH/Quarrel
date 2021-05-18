@@ -56,19 +56,21 @@
 
     @for (int i = 0; i < 5; i++)
     {
+        String[] names = { "Sarah", "Clive", "Richard", "Alicia", "Steve" };
+        String[] messages = { "Hello, how are you?", "Maybe later", "Sure can", "I'll have a look for you", "Sure" };
         String path = "/Images/selfie" + i + ".png";
         <div class="index-messagepanel animate" onclick="window.location.href = '/message';">
             <div class="row">
                 <div class="col-3" style="margin-top:35px;">
                     <center>
-                        <img src="@path" class="glow-unseen" style="width:120px; height:120px;
-                            border-radius:50%;" />
+                        <a href="/Profile?id=@names[i]"><img src="@path" class="glow-unseen" style="width:120px; height:120px;
+                            border-radius:50%;" /></a>
                     </center>
                 </div>
                 <div class="col-7" style="margin-top:45px;">
-                    <h1>Fredrick</h1>
+                    <h1>@names[i]</h1>
                     <p>
-                        <b> XXXX: Hello, you there? </b>
+                        <b>@names[i]: @messages[i]</b>
                     </p>
                 </div>
                 <div class="col-2" style="margin-top:35px;">

@@ -10,7 +10,7 @@ using Microsoft.Data.SqlClient;
 namespace Group_Project.Models
 {
 
-    public class SettingModel : PageModel
+    public class PeopleModel : PageModel
     {
         
     }

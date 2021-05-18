@@ -380,5 +380,11 @@ C:\Users\jackh\Source\Repos\Quarrel\FINAL\obj\Debug\netcoreapp3.1\SoftwareProjec
 C:\Users\jackh\Source\Repos\Quarrel\FINAL\obj\Debug\netcoreapp3.1\FINAL.csproj.CopyComplete
 C:\Users\jackh\Source\Repos\Quarrel\FINAL\obj\Debug\netcoreapp3.1\FINAL.genruntimeconfig.cache
 C:\Users\jackh\source\repos\Quarrel\FINAL\obj\Debug\netcoreapp3.1\Razor\Pages\Message.cshtml.g.cs
-C:\Users\jackh\source\repos\Quarrel\FINAL\obj\Debug\netcoreapp3.1\Razor\Pages\Settings.cshtml.g.cs
 C:\Users\jackh\source\repos\Quarrel\FINAL\obj\Debug\netcoreapp3.1\Razor\Pages\Groups.cshtml.g.cs
+C:\Users\jackh\source\repos\Quarrel\FINAL\obj\Debug\netcoreapp3.1\Razor\Pages\People.cshtml.g.cs
+C:\Users\jackh\source\repos\Quarrel\FINAL\obj\Debug\netcoreapp3.1\Razor\Pages\Profile.cshtml.g.cs
+C:\Users\jackh\source\repos\Quarrel\FINAL\obj\Debug\netcoreapp3.1\Razor\Pages\Banned.cshtml.g.cs
+C:\Users\jackh\source\repos\Quarrel\FINAL\obj\Debug\netcoreapp3.1\Razor\Pages\Login.cshtml.g.cs
+C:\Users\jackh\source\repos\Quarrel\FINAL\obj\Debug\netcoreapp3.1\Razor\Pages\CreateAccount.cshtml.g.cs
+C:\Users\jackh\source\repos\Quarrel\FINAL\obj\Debug\netcoreapp3.1\Razor\Pages\Verify.cshtml.g.cs
+C:\Users\jackh\source\repos\Quarrel\FINAL\obj\Debug\netcoreapp3.1\Razor\Pages\Settings.cshtml.g.cs

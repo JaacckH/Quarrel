@@ -1,0 +1,130 @@
+﻿@page
+@model Group_Project.Models.SettingsModel
+
+@{ 
+    int i = 0;
+    String[] IDarray = HttpContext.Request.Query["id"].ToString().Split('>');
+    String id = IDarray[0];
+
+    String[] names = { "Sarah", "Clive", "Richard", "Alicia", "Steve" };
+    String[] titles = { "Beach fun", "Cliff jumping", "Having fun", "Me and Joe", "Look at this!" };
+    String path = "/Images/selfie" + i + ".png";
+
+    String image = "";
+
+    for (i = 0; i < 5; i++)
+    {
+        if(id == names[i])
+        {
+            image = "/Images/selfie" + i + ".png";
+        }
+    }
+}
+<style>
+</style>
+
+<div class="settings-top shadow">
+    <div class="container" style="max-width:92%;">
+        <div class="row" style="margin-top:40px;">
+            <div class="col-10">
+                <h1 style="font-size:50pt;"><b>@id</b></h1>
+            </div>
+            <div class="col-2">
+                <i class="fas fa-cog settings-cog"></i>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top:65px;">
+            <div class="col-2">
+                <img src="@image" class="glow-unseen"
+                     style="width:120px; height:120px; border-radius:50%;" />
+            </div>
+            <div class="col-7">
+                <h1>@id</h1>
+                <p>@Html.Raw(id + "123")</p>
+            </div>
+            <div class="col-3">
+                <button class="button-editprofile">···</button>
+            </div>
+        </div>
+
+        <div class="settings-stats">
+            <div class="row" style="margin-top:65px;">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <h1>122</h1>
+                    <p>Followers</p>
+                </div>
+                <div class="col-2">
+                    <h1>50</h1>
+                    <p>Following</p>
+                </div>
+                <div class="col-2">
+                    <h1>68</h1>
+                    <p>Friends</p>
+                </div>
+                <div class="col-2">
+                    <h1>92</h1>
+                    <p>Posts</p>
+                </div>
+                <div class="col-2">
+                    <h1>12</h1>
+                    <p>Stories</p>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-2">
+    <div class="settings-statbox shadow">
+        <div class="row">
+            <div class="col">
+                <h1 class="settings-statbox-sent" style="color:#04e5c3;">1930</h1>
+                <p><b>Sent</b></p>
+            </div>
+            <p class="settings-divider" style="color: var(--accent)">|</p>
+            <div class="col">
+                <h1 class="settings-statbox-sent" style="color:#ffde00;">2032</h1>
+                <p><b>Received</b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="posts">
+
+        @for (i = 0; i < 5; i++)
+        {
+            <div class="post">
+                <h1>@titles[i]</h1>
+                <p><b>just me having fun</b></p>
+                <img src="@image" />
+
+                <div class="row" style="margin-top:15px;">
+                    <div class="col-2">
+                        <div class="post-option shadow">
+                            <p>012</p><i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="col-2" style="margin-left:40px;">
+                        <div class="post-option shadow">
+                            <p>012</p><i class="far fa-comment"></i>
+                        </div>
+                    </div>
+                    <div class="col-2" style="margin-left:40px;">
+                        <div class="post-option shadow">
+                            <p>1.2K</p><i class="fas fa-share-alt"></i>
+                        </div>
+                    </div>
+                    <div class="col-2" style="margin-left:240px;">
+                        <div class="post-option shadow" style="width:90px; border-radius:50px; float:right;">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                </div>
+                <hr class="shadow">
+            </div>
+        }
+    </div>
+</div>

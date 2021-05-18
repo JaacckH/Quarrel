@@ -1,0 +1,85 @@
+﻿<style>
+    body {
+        background-color: white;
+    }
+
+    .groups-topnav {
+        background-color: var(--accent);
+    }
+
+        .groups-topnav h1, h2, p {
+            color: white;
+        }
+
+        .groups-topnav h1 {
+            font-size: 50pt;
+            margin: 12px;
+        }
+
+        .groups-topnav h2 {
+            font-size: 35pt;
+            margin-top: 24px;
+        }
+
+    .groups-main h1 {
+        font-size: 40pt;
+    }
+
+    .groups-group {
+        width: 100%;
+        height: 420px;
+        margin-bottom: 40px;
+        background-image: url('/Images/group.png');
+        border-radius: 150px 150px 150px 20px;
+    }
+
+        .groups-group h1 {
+            font-size: 35pt;
+            padding-top: 180px;
+            color: white;
+        }
+
+    .tbmain {
+        font-family: 'Work Sans', sans-serif;
+        border: solid 3px var(--accent);
+        border-radius: 60px;
+        padding: 20px 40px;
+        font-size: 25pt;
+        width: 700px;
+        color: var(--accent);
+    }
+
+    .login p {
+        font-size: 28pt;
+        color: var(--accent);
+    }
+</style>
+
+<div class="row groups-topnav">
+    <div class="col">
+        <a href="/"><h1 style="padding-left:10px;"><</h1></a>
+    </div>
+    <div class="col">
+        <center><h2>Settings</h2></center>
+    </div>
+    <div class="col">
+        <h1 style="float:right;"></h1>
+    </div>
+</div>
+
+<center><h1 style="font-size:130pt; margin-top:100px;"><b>Settings</b></h1></center>
+<center><p style="color:#222; font-size:30pt;">Edit your Profile Settings</p></center>
+
+<div class="login">
+    <center>
+        <p style="margin-top:220px;">Full Name</p>
+        <input class="tbmain" placeholder="Georgia Hall" id="" />
+        <p style="margin-top:30px;">Email Address</p>
+        <input class="tbmain" placeholder="GeorgiaHall@gmail.com" id="" />
+        <p style="margin-top:30px;">Country</p>
+        <input class="tbmain" placeholder="United Kingdom" id="" />
+        <p style="margin-top:30px;">Username</p>
+        <input class="tbmain" placeholder="Georgia123" id="" />
+    </center>
+</div>
+<center><h1 style="font-size:45pt; margin-top:400px;" onclick="alert('Changes Saved');">Save Changes</h1></center>
